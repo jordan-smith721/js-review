@@ -1,3 +1,5 @@
+console.log("Introduction to JavaScript");
+
 function fizzBuzz()
 {
     for (let i = 1; i <= 100; i++)
@@ -15,7 +17,7 @@ function fizzBuzz()
             console.log("Buzz");
         }
         else
-            {
+        {
             console.log(i);
         }
     }
