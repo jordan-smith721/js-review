@@ -4,21 +4,19 @@ function fizzBuzz()
 {
     for (let i = 1; i <= 100; i++)
     {
-        if ((i % 3 == 0) && (i % 5 == 0))
+        let output = "";
+        //add fizz if divisible by 3
+        if (i % 3 == 0)
         {
-            console.log("FizzBuzz");
+            output += "Fizz";
         }
-        else if (i % 3 == 0)
+        //add buzz if divisible by 5
+        if (i % 5 == 0)
         {
-            console.log("Fizz");
+            output += "Buzz";
         }
-        else if (i % 5 == 0)
-        {
-            console.log("Buzz");
-        }
-        else
-        {
-            console.log(i);
-        }
+        //print output if any combination of "Fizz" and "Buzz" are included
+        //print the number if output is empty
+        console.log(output || i);
     }
 }
