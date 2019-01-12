@@ -25,6 +25,7 @@ function countBs(string)
 {
     let numBs = 0;
 
+    //loop through string and increment B if fount
     for (let i = 0; i < string.length; i++)
     {
         if (string[i] === "B")
@@ -34,4 +35,20 @@ function countBs(string)
     }
 
     console.log("Number of capital Bs: " + numBs);
+}
+
+function countChar(string, char)
+{
+    let numChars = 0;
+
+    //loop through string and input numchars if char is found
+    for (let i = 0; i < string.length; i++)
+    {
+        if (string[i] === char)
+        {
+            numChars++;
+        }
+    }
+
+    console.log("Number of '" + char + "'s: " + numChars);
 }
