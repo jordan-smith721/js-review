@@ -52,3 +52,9 @@ function countChar(string, char)
 
     console.log("Number of '" + char + "'s: " + numChars);
 }
+
+//rewrite countBs using countChar
+function newCountBs(string)
+{
+    countChar(string, "B");
+}
