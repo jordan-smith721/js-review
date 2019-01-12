@@ -20,3 +20,18 @@ function fizzBuzz()
         console.log(output || i);
     }
 }
+
+function countBs(string)
+{
+    let numBs = 0;
+
+    for (let i = 0; i < string.length; i++)
+    {
+        if (string[i] === "B")
+        {
+            numBs++;
+        }
+    }
+
+    console.log("Number of capital Bs: " + numBs);
+}
